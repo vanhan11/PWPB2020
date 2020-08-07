@@ -7,145 +7,130 @@
     tools:context=".MainActivity">
 
     <RelativeLayout
+        android:id="@+id/re1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-
-        android:layout_alignParentTop="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="0dp"
-        android:layout_marginBottom="0dp">
+        android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/text"
+            android:id="@+id/heading_nama"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="20dp"
-            android:gravity="center"
-            android:text="Alvan Hanani"
-            android:textColor="#000"
+            android:text="@string/alvan_hanani"
+            android:textAlignment="center"
             android:textSize="25sp"
             android:textStyle="bold"
-            android:typeface="sans" />
+            android:typeface="sans"
+            android:layout_alignParentTop="true"
+            android:layout_margin="30dp"/>
 
-        <RelativeLayout
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/re2"
+        android:layout_below="@id/re1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_marginTop="40dp"
             android:layout_width="match_parent"
-            android:layout_height="652dp"
-            android:layout_below="@+id/text"
-            android:layout_alignParentBottom="true"
-            android:layout_marginTop="25dp"
-            android:layout_marginBottom="0dp">
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="Nama" />
 
+        <EditText
+            android:id="@+id/edit1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp" />
 
-            <TextView
-                android:id="@+id/text1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:text="Nama" />
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="@string/alamat" />
 
-            <EditText
-                android:id="@+id/edit1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/text1"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp" />
+        <EditText
+            android:id="@+id/edit2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp" />
 
-            <TextView
-                android:id="@+id/text2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/edit1"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:text="Alamat" />
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="@string/kampus" />
 
-            <EditText
-                android:id="@+id/edit2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/text2"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp" />
+        <EditText
+            android:id="@+id/edit3"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text3"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp" />
 
-            <TextView
-                android:id="@+id/text3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/edit2"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:text="Kampus" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/re3"
+        android:layout_below="@id/re2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/gambar1"
+            android:layout_width="80dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="30dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/gambarku" />
+        <ImageView
+            android:id="@+id/gambar2"
+            android:layout_width="80dp"
+            android:layout_height="130dp"
+            android:src="@drawable/gambarku"
+            android:layout_centerInParent="true"/>
+        <ImageView
+            android:id="@+id/gambar3"
+            android:layout_width="80dp"
+            android:layout_height="130dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/gambarku" />
 
-            <EditText
-                android:id="@+id/edit3"
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/text3"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/re3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
 
-            <ImageView
-                android:id="@+id/gambar1"
-                android:layout_width="80dp"
-                android:layout_height="130dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginTop="73dp"
-                android:layout_marginEnd="30dp"
-                android:layout_marginBottom="225dp"
-                android:src="@drawable/gambarku" />
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="140dp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:text="@string/kembali"
+            />
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="140dp"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:text="NEXT"
+            />
 
-            <ImageView
-                android:id="@+id/gambar2"
-
-                android:layout_width="80dp"
-                android:layout_height="110dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="122dp"
-                android:layout_marginEnd="120dp"
-                android:layout_marginBottom="234dp"
-                android:src="@drawable/gambarku" />
-
-            <ImageView
-                android:id="@+id/gamabar3"
-                android:layout_width="80dp"
-                android:layout_height="130dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="30dp"
-                android:layout_marginBottom="225dp"
-                android:src="@drawable/gambarku" />
-
-            <Button
-                android:id="@+id/btn1"
-                android:layout_width="165dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="30dp"
-                android:layout_marginBottom="140dp"
-                android:layout_toStartOf="@+id/btn2"
-                android:text="KEMBALI" />
-
-            <Button
-                android:id="@+id/btn2"
-                android:layout_width="165dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="30dp"
-                android:layout_marginBottom="140dp"
-                android:text="NEXT" />
-
-
-        </RelativeLayout>
     </RelativeLayout>
 
-</RelativeLayout>
+    </RelativeLayout>
