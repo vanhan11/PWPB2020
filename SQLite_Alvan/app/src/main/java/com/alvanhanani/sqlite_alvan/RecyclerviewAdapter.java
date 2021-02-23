@@ -51,7 +51,8 @@ public class RecyclerviewAdapter extends
     @Override
     public int getItemCount() {
         return listPersonInfo.size();
-    }public class UserViewHolder extends RecyclerView.ViewHolder {
+    }
+    public class UserViewHolder extends RecyclerView.ViewHolder {
         TextView ctxtAge,ctxtName;
         ImageView imgDelete,imgEdit;
         public UserViewHolder(@NonNull View itemView) {
